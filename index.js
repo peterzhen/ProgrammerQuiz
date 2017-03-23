@@ -30,7 +30,7 @@ Question.prototype.eventHandlers.onSessionStarted = function (sessionStartedRequ
 
 Question.prototype.eventHandlers.onLaunch = function (launchRequest, session, response) {
     //console.log("onLaunch requestId: " + launchRequest.requestId + ", sessionId: " + session.sessionId);
-    handleNewFactRequest(response);
+    handleNewQuestionRequest(response);
 };
 
 /**
@@ -43,7 +43,7 @@ Question.prototype.eventHandlers.onSessionEnded = function (sessionEndedRequest,
 
 Question.prototype.intentHandlers = {
     "GetNewFactIntent": function (intent, session, response) {
-        handleNewFactRequest(response);
+        handleNewQuestionRequest(response);
     },
 
     "AMAZON.HelpIntent": function (intent, session, response) {
@@ -61,10 +61,7 @@ Question.prototype.intentHandlers = {
     }
 };
 
-/**
- * Gets a random new fact from the list and returns to the user.
- */
-function handleNewFactRequest(response) {
+function handleNewQuestionRequest(response) {
     // Get a random space fact from the space facts list
     var questionIndex = Math.floor(Math.random() * QUESTIONS.length);
     var randomQuestion = QUESTIONS[questionIndex];
