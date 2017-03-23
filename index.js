@@ -66,11 +66,11 @@ Question.prototype.intentHandlers = {
  */
 function handleNewFactRequest(response) {
     // Get a random space fact from the space facts list
-    var factIndex = Math.floor(Math.random() * FACTS.length);
-    var randomFact = FACTS[factIndex];
+    var questionIndex = Math.floor(Math.random() * QUESTIONS.length);
+    var randomQuestion = QUESTIONS[questionIndex];
 
     // Create speech output
-    var speechOutput = "Here's your Programming Question: " + randomFact;
+    var speechOutput = "Here's your Programming Question: " + randomQuestion;
     var cardTitle = "Your Question";
     response.tellWithCard(speechOutput, cardTitle, speechOutput);
 }
