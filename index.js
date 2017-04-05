@@ -20,7 +20,7 @@ var QUESTIONS = [
     "Implement parseInt",
     "Implement squareroot function",
     "Implement an exponent function",
-    "Write a multiply function that multiples 2 integers without using *",
+    "Write a multiply function that multiples 2 integers without using multiply",
     "Find the first non-repeated character in a String",
     "Reverse a String iteratively and recursively",
     "Determine if 2 Strings are anagrams",
@@ -28,10 +28,10 @@ var QUESTIONS = [
     "Check if a String is composed of all unique characters",
     "Determine if a String is an int or a double",
     "Implement a BST with insert and delete functions",
-    "Print a tree using BFS and DFS",
-    "Write a function that determines if a tree is a BST",
-    "Find the smallest element in a BST",
-    "Find the 2nd largest number in a BST",
+    "Print a tree using B.F.S. and D.F.S.",
+    "Write a function that determines if a tree is a B.S.T.",
+    "Find the smallest element in a B.S.T.",
+    "Find the 2nd largest number in a B.S.T.",
     "Given a binary tree which is a sum tree (child nodes add to parent), write an algorithm to determine whether the tree is a valid sum tree",
     "Find the distance between 2 nodes in a BST and a normal binary tree",
     "Print the coordinates of every node in a binary tree, where root is 0,0",
@@ -53,7 +53,8 @@ var QUESTIONS = [
     "Implement selection sort",
     "Implement insertion sort",
     "Implement merge sort",
-    "Implement quick sort"
+    "Implement quick sort",
+    "Write a function that swaps two intergers without using extra memory"
 ];
 
 /**
