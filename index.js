@@ -1,4 +1,4 @@
-
+l
 var APP_ID = undefined; //OPTIONAL: replace with "amzn1.echo-sdk-ams.app.[your-unique-value-here]";
 
 var QUESTIONS = [
@@ -72,7 +72,6 @@ Question.prototype.constructor = Question;
 
 Question.prototype.eventHandlers.onSessionStarted = function (sessionStartedRequest, session) {
     //console.log("onSessionStarted requestId: " + sessionStartedRequest.requestId + ", sessionId: " + session.sessionId);
-    // any initialization logic goes here
 };
 
 Question.prototype.eventHandlers.onLaunch = function (launchRequest, session, response) {
@@ -109,7 +108,7 @@ Question.prototype.intentHandlers = {
 };
 
 function handleNewQuestionRequest(response) {
-    // Get a random space fact from the space facts list
+    // Get a random space fact from the facts list
     var questionIndex = Math.floor(Math.random() * QUESTIONS.length);
     var randomQuestion = QUESTIONS[questionIndex];
 
@@ -121,7 +120,6 @@ function handleNewQuestionRequest(response) {
 
 // Create the handler that responds to the Alexa Request.
 exports.handler = function (event, context) {
-    // Create an instance of the SpaceGeek skill.
     var question = new Question();
     question.execute(event, context);
 };
